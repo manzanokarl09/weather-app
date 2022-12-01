@@ -5,7 +5,7 @@ var promise;
 
 export default class GeoapifyService {
     getLocationInfo(location) {
-        promise = axios.get(`${config.api_geoapify.url}/search?text=${location}&apiKey=${config.api_geoapify.key}`);
+        promise = axios.get(`${config.laravel_api.url}/location?text=${location}`);
         return promise;
     }
 }

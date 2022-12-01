@@ -7,6 +7,9 @@ const config = Object.freeze({
         url: 'https://api.openweathermap.org/data/2.5',
         key: '20a3b5b781c7fe931b795c77172d16c8',
         icon_url: 'http://openweathermap.org/img/wn/'
+    },
+    laravel_api: {
+        url: 'http://127.0.0.1:8000/api',
     }
     
 });

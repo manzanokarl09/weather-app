@@ -5,7 +5,7 @@ var promise;
 
 export default class OpenweatherService {
     getWeatherinfo(data) {
-        promise = axios.get(`${config.api_openweathermap.url}/weather?lon=${data.lon}&lat=${data.lat}&apiKey=${config.api_openweathermap.key}&units=metric`);
+        promise = axios.get(`${config.laravel_api.url}/weather?lon=${data.lon}&lat=${data.lat}`);
         return promise;
     }
 }
